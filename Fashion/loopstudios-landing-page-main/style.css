@@ -1,0 +1,185 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+    height: 640px;
+    background:url('./images/desktop/image-hero.jpg') center top/cover no-repeat;
+	padding: 40px 0;
+	font-family: 'Alata', sans-serif;
+	
+	
+}
+
+header nav.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+
+}
+
+ul {
+	display: flex;
+	gap: 25px;
+	list-style: none;
+	padding-inline-start: 0;
+	color: white;
+
+}
+
+.container {
+
+	max-width: 1024px;
+	margin: 0 auto;
+	
+}
+
+.titulo {
+
+	max-width: 700px;
+	border: 2px solid white;
+	padding: 20px;
+	color: white;
+	font-family:'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 45px;
+
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0;
+	gap: 100px;
+}
+
+section {
+
+	width: 100%;
+}
+
+#VR {
+
+	background:url(images/desktop/image-interactive.jpg) center left/contain no-repeat;
+	height: 500px;
+	display:flex;
+	align-items: flex-end;
+	justify-content: end;
+
+}
+
+.texto {
+
+	font-family: 'Alata', sans-serif;
+	color: black;
+	padding: 50px 0 0 50px;
+	background: white;
+	width: 450px;
+	
+} 
+
+.texto h1 {
+
+	text-transform: uppercase;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.texto p {
+
+	color:hsl(0, 0%, 55%);
+
+}
+
+.creations {
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.creations li {
+	height: 450px ;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding: 20px 30px;
+	display: flex;
+	align-items: flex-end;
+
+}
+
+.creations-header{
+
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.btn {
+
+	padding: 10px 20px;
+	background: none;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+
+footer{
+
+	background: black;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 40px 0;
+
+
+
+}
+
+
+footer .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.fn, footer nav {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+footer nav {
+	justify-content: initial;
+}
+
+.fn {
+	justify-content: end;
+	align-items: flex-end;
+}
+
+.fn p{
+	color: white;
+
+}
+
+@media (max-width: 700px)  { 
+
+		.creations{
+			grid-template-columns: 1fr;
+		}
+
+		.creations li {
+			height: 250px;	
+	}
+}
